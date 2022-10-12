@@ -11,4 +11,4 @@ class MoveActorsAction(Action):
     def execute(self, cast, script):
         cast = cast.get_all_actors()
         for actor in cast:
-            self.move_next(actor)
+            actor.move_next(actor)
